@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Company>Citadelle du Web</Company>
+    <Description>Simple chronometer app to help keeping track of the time spent on 3 different projects.</Description>
+    <PackageIcon>chronoWork.png</PackageIcon>
+    <PackageTags>chrono,chronograph,chronometer,work,tool</PackageTags>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <ApplicationIcon>chronoWork.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="chronoWork.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\chronoWork.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

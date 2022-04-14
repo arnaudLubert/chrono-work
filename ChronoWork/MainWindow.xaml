@@ -1,0 +1,35 @@
+﻿<Window x:Class="ChronoWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChronoWork"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        Title="ChronoWork" Height="190" Width="450">
+    <Grid>
+        <TextBlock x:Name="title" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="ChronoWork" VerticalAlignment="Top" TextDecorations="Underline" FontWeight="Bold"/>
+        <TextBlock x:Name="credit" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="Made by La citadelle du web" VerticalAlignment="Top" TextDecorations="Underline" FontSize="8" Cursor="Hand"/>
+
+        <TextBox x:Name="UITextBox" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" Text="Project 1" VerticalAlignment="Top" Width="106"/>
+        <TextBlock x:Name="UITextChrono" HorizontalAlignment="Left" Margin="332,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="0"/><Run Text="0:00:00"/></TextBlock>
+        <TextBlock x:Name="UITextJH" HorizontalAlignment="Right" Margin="0,46,10,0" TextWrapping="Wrap" Text="0 J/H" VerticalAlignment="Top"/>
+        <Button x:Name="UIButtonStart" Click="ClickStartChrono" Content="Start" HorizontalAlignment="Left" Margin="133,44,0,0" VerticalAlignment="Top" Cursor="Hand" Width="52"/>
+        <Button x:Name="UIButtonStop" Click="ClickStopChrono" Content="Stop" HorizontalAlignment="Left" Margin="240,44,0,0" VerticalAlignment="Top" Cursor="Hand" Width="55"/>
+        <Button x:Name="UIButtonReset" Click="ClickResetChrono" Content="Reset" HorizontalAlignment="Left" Margin="190,44,0,0" VerticalAlignment="Top" Cursor="Hand" Width="45"/>
+
+        <TextBox x:Name="UITextBox2" HorizontalAlignment="Left" Margin="10,80,0,0" TextWrapping="Wrap" Text="Project 2" VerticalAlignment="Top" Width="106" />
+        <TextBlock x:Name="UITextChrono2" HorizontalAlignment="Left" Margin="332,81,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top"/>
+        <TextBlock x:Name="UITextJH2" HorizontalAlignment="Right" Margin="0,81,10,0" TextWrapping="Wrap" Text="0 J/H" VerticalAlignment="Top"/>
+        <Button x:Name="UIButtonStart2" Click="ClickStartChrono" Content="Start" HorizontalAlignment="Left" Margin="133,79,0,0" VerticalAlignment="Top" Cursor="Hand" Width="52"/>
+        <Button x:Name="UIButtonStop2" Click="ClickStopChrono" Content="Stop" HorizontalAlignment="Left" Margin="240,79,0,0" VerticalAlignment="Top" Cursor="Hand" Width="55"/>
+        <Button x:Name="UIButtonReset2" Click="ClickResetChrono" Content="Reset" HorizontalAlignment="Left" Margin="190,79,0,0" VerticalAlignment="Top" Cursor="Hand" Width="45"/>
+
+        <TextBox x:Name="UITextBox3" HorizontalAlignment="Left" Margin="10,114,0,0" TextWrapping="Wrap" Text="Project 3" VerticalAlignment="Top" Width="106"/>
+        <TextBlock x:Name="UITextChrono3" HorizontalAlignment="Left" Margin="332,115,0,0" TextWrapping="Wrap" Text="00:00:00" VerticalAlignment="Top"/>
+        <TextBlock x:Name="UITextJH3" HorizontalAlignment="Right" Margin="0,115,10,0" TextWrapping="Wrap" Text="0 J/H" VerticalAlignment="Top"/>
+        <Button x:Name="UIButtonStart3" Click="ClickStartChrono" Content="Start" HorizontalAlignment="Left" Margin="133,113,0,0" VerticalAlignment="Top" Cursor="Hand" Width="52"/>
+        <Button x:Name="UIButtonStop3" Click="ClickStopChrono" Content="Stop" HorizontalAlignment="Left" Margin="240,113,0,0" VerticalAlignment="Top" Cursor="Hand" Width="55"/>
+        <Button x:Name="UIButtonReset3" Click="ClickResetChrono" Content="Reset" HorizontalAlignment="Left" Margin="190,113,0,0" VerticalAlignment="Top" Cursor="Hand" Width="45"/>
+    </Grid>
+</Window>
