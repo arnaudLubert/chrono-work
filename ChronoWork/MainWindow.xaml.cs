@@ -10,6 +10,8 @@ namespace ChronoWork
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MainWindow : Window
     {
         private bool updateLoop = false;
@@ -31,6 +33,20 @@ namespace ChronoWork
         {
             InitializeComponent();
             InitializeChrono();
+        }
+
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            // prepare all chronos to be saved
+            for (int i = 0; i != chronoCount; i++)
+            {
+                if (chronoBegin[i] != 0L)
+                {
+                    chronoOffset[i] += DateTimeOffset.Now.ToUnixTimeSeconds() - chronoBegin[i];
+                    chronoBegin[i] = 0;
+                }
+            }
+            SaveData();
         }
 
         private void InitializeChrono()
@@ -194,7 +210,7 @@ namespace ChronoWork
         // 0,0 JH
         private string FormatJH(long time)
         {
-            return ((float)Math.Round((double)time / 360 / 8) / 10).ToString() + " J/H";
+            return ((float)Math.Round((double)time / 360 / 7) / 10).ToString() + " J/H";
         }
 
         private void SaveData()

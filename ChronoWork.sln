@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32002.185
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChronoWork", "ChronoWork\ChronoWork.csproj", "{3580B841-554E-4F6C-9B33-24487C82410A}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Installer", "Installer\Installer.vdproj", "{7A088163-5655-4929-956A-7A5E5F56C658}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,9 @@ Global
 		{3580B841-554E-4F6C-9B33-24487C82410A}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{3580B841-554E-4F6C-9B33-24487C82410A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3580B841-554E-4F6C-9B33-24487C82410A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A088163-5655-4929-956A-7A5E5F56C658}.Debug|Any CPU.ActiveCfg = Debug
+		{7A088163-5655-4929-956A-7A5E5F56C658}.Release|Any CPU.ActiveCfg = Release
+		{7A088163-5655-4929-956A-7A5E5F56C658}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

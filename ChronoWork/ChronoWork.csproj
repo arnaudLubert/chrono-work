@@ -7,7 +7,7 @@
     <UseWPF>true</UseWPF>
     <Company>Citadelle du Web</Company>
     <Description>Simple chronometer app to help keeping track of the time spent on 3 different projects.</Description>
-    <PackageIcon>chronoWork.png</PackageIcon>
+    <PackageIcon>chronoWork-128.png</PackageIcon>
     <PackageTags>chrono,chronograph,chronometer,work,tool</PackageTags>
     <RunPostBuildEvent>Always</RunPostBuildEvent>
     <ApplicationIcon>chronoWork.ico</ApplicationIcon>
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="D:\chronoWork.png">
+    <None Update="chronoWork-128.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
